@@ -110,8 +110,6 @@ a:hover {
 
 
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   cursor: pointer;
   padding-left: 20px; }
 
