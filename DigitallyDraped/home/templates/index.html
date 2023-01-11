@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
+	<title>DigitallyDraped</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -28,7 +28,7 @@
             <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Services</a>
@@ -37,7 +37,7 @@
             <a class="nav-link" href="#">Team</a>
         </li> -->
         <li class="nav-item active">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#connect">Connect</a>
         </li>
 
 
@@ -74,13 +74,15 @@
 <!--- Jumbotron -->
 <div class="container-fluid">
     <div class="row jumbotron">
+        <a id = "about">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
             <p class="lead">This is an ai based website where you get to design your own idea and make fashion an easy tread. AI makes your daily life fashion a simple task to carry your own style.
                 Here you are welcomed with your own vision and style of dressing.
             </p>
         </div>
+        </a>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Create your Design</button></a>
+            <a href="http://127.0.0.1:8000/trial/"><button type="button" id="trial" class="btn btn-outline-secondary btn-lg">Free Trial</button></a>
         </div>
     </div>
 </div>
@@ -116,7 +118,7 @@
 <figure>
     <div class="fixed-wrap">
         <div id="fixed">
-
+            
         </div>
     </div>
 </figure>
@@ -158,20 +160,22 @@
             <h2>Connect</h2>
 
         </div>
+        <a id = "connect">
         <div class="col-12 social padding">
-            <a href="https://www.facebook.com/sandhya.baral.9210/"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/KBataju"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/roshani-poudel-03ab901b5/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/sandhyab.l/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@sandhyaa9050/featured"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/sandhya.baral.9210/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/KBataju" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/roshani-poudel-03ab901b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sandhyab.l/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@sandhyaa9050/featured" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
+        </a>
     </div>
 </div>
 
 <!--- Footer -->
 
 
-
+<script src="{% static 'js/script.js' %}"></script>
 
 </body>
 </html>

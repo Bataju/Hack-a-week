@@ -194,7 +194,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('../images/mac.png');
+  background-image: url('img/mac.png');
   position: fixed;
   display: block;
   top: 0;
