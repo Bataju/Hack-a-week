@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navabr-light bg-light sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}"></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse"     
+    data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+        <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Team</a>
+        </li> -->
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+
+
+    </ul>
+</div>
+</div>
+</nav>
+<!--- Image Slider -->
+ <div id="slides" class="carousel" data-ride="carousel"> <!-- carousel is sliding or slideshow -->
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner ">
+        <div class="carousel-item active">
+            <img src="{% static 'images/background.png' %}">
+            <div class="carousel-caption">
+                <h1 class="display-2">DigitallyDraped</h1>
+                <h3>AI meets Fashion</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>   <!--by default primary makes blue btn-->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/background2.png' %}">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/background3.png' %}">
+        </div>
+    </div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">This is an ai based website where you get to design your own idea and make fashion an easy tread. AI makes your daily life fashion a simple task to carry your own style.
+                Here you are welcomed with your own vision and style of dressing.
+            </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Create your Design</button></a>
+        </div>
+    </div>
+</div>
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>If you build it...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex 
+            velit consequuntur sit sunt officiis eligendi voluptatibus explicabo 
+            asperiores at molestias placeat enim aut, expedita dignissimos est suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex 
+                velit consequuntur sit sunt officiis eligendi voluptatibus explicabo 
+                asperiores at molestias placeat enim aut, expedita dignissimos est suscipit.</p>
+                <br>
+                <a href="#" class="btn btn-primary">Learn More</a>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'images/desk.png' %}" class="img-fluid">
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>How we work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex 
+            velit consequuntur sit sunt officiis eligendi voluptatibus explicabo 
+            asperiores at molestias placeat enim aut, expedita dignissimos est suscipit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex 
+                velit consequuntur sit sunt officiis eligendi voluptatibus explicabo 
+                asperiores at molestias placeat enim aut, expedita dignissimos est suscipit.</p>
+                <br>
+               </div>
+        <div class="col-lg-6">
+            <img src="{% static 'images/bootstrap2.png' %}" class="img-fluid">
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/sandhya.baral.9210/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/KBataju"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/roshani-poudel-03ab901b5/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/sandhyab.l/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@sandhyaa9050/featured"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+<!--- Footer -->
+
+
+
+
+</body>
+</html>
