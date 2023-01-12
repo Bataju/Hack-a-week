@@ -20,6 +20,6 @@ def index(request):
         data = parsed_response["data"][0]
         image_url=data['url']
 
-        return render(request, 'trial\image.html', {'image_url': image_url})
+        return render(request, 'trial\image.html', {'image_url': image_url, 'description': description})
     else:
         return render(request, 'trial\index.html')
