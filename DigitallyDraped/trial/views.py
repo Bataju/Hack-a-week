@@ -7,11 +7,15 @@ openai.api_key = "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"
 
 def index(request):
     if request.method == 'POST':
+        gender = request.POST['gender']
+        age = request.POST['age']
         description = request.POST['description']
 
+        generated_prompt = f"a plain background picture of a {gender} of {age} wearing {description}"
+ 
         # Use the text input as the prompt for the API
         response = openai.Image.create(
-            prompt=description,
+            prompt=generated_prompt,
             n=2,
         )
 
