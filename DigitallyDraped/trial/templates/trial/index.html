@@ -46,9 +46,10 @@
 </div>
 </nav>
 
-<form>
+<form method="post">
+    {% csrf_token %}
     <label for="inputText">Text Input:</label>
-    <input type="text" id="inputText" name="inputText">
+    <input type="text" id="description" name="description">
     <input type="submit" value="Submit">
 </form>
   
