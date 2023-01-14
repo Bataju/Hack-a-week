@@ -11,7 +11,7 @@ def index(request):
         age = request.POST['age']
         description = request.POST['description']
 
-        generated_prompt = f"a plain background full body picture of a {gender} of {age} wearing {description}"
+        generated_prompt = f"a plain background full body picture of a {gender} of {age} of slim-build wearing {description}"
  
         # Use the text input as the prompt for the API
         response = openai.Image.create(
