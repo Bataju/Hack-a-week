@@ -2,8 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import openai
 import json
+import os
 
-openai.api_key = "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"
+key = os.environ.get('API_KEY')#from env variables should be set as API_KEY
+
+openai.api_key = key;
 
 def index(request):
     if request.method == 'POST':
