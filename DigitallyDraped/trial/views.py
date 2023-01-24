@@ -19,7 +19,7 @@ def index(request):
         # Use the text input as the prompt for the API
         response = openai.Image.create(
             prompt=generated_prompt,
-            n=2,
+            n=1,
         )
 
         j_response=json.dumps(response)
